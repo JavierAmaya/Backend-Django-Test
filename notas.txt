@@ -1,0 +1,23 @@
+1.Crear el entorno de desarrollo
+virtualenv
+1.2 Activar el entorno, desde el cmd 'call Scripts/activate'
+2. crear el archivo de requerimientos
+requirements.txt 
+django==3.2.7 
+djangorestframework==3.12.4
+
+3. Poner en el archivo requirements las versiones de django y djangorestframework que querramos usar
+4. ejecutar en la consola 'pip install -r requirements.txt'
+5. Hasta aqui ya esta todo lo que ocupamos para la prueba
+
+
+6. Crear el proyecto django 
+'django-admin startproject nombreProyecto .'   //el punto significa que quiere instalar todo en la misma carpeta
+
+7. crear un app, para manejar diferentes funcionalidades
+python manage.py startapp profiles_api
+
+8. habilitar la aplicacion en el proyecto
+ir a settings.py en el proyecto y agregar la aplicacion en el arreglo INSTALLED_APPS = [
+    
+9. Importar en el mismo archivo y arreglo anterior, lo siguiente 'rest-framework' y  'rest-framework.authtoken'
